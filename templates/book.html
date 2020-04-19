@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Booking</title> 
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='book.css')}}">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Dancing+Script|Indie+Flower|Lato|Monoton&display=swap" rel="stylesheet">
+         <script src="https://kit.fontawesome.com/4db0b10f11.js" crossorigin="anonymous"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <script src="jquery.datepicker.full.min.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+          <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+          
+
+
+          
+    </head>
+
+
+
+
+
+
+    <body>
+
+
+        
+
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTuFkKq_xJl0UAaFq51GYf7MR4SbLiiBbNZGs-6ZV2CwpqhExK&usqp=CAU" style="width:50px;"></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venue.html">Room</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              About Us
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="information.html">Price</a>
+              <a class="dropdown-item" href="pictures.html">Gallery</a>
+              
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+
+          
+        </ul>
+      </nav>
+
+
+    
+
+    <div class="container" style="margin-top: 50px;">
+      <h2>Booking Form</h2>
+      <form  action="http://localhost:5000/book.html" method="POST">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="password" class="form-control" id="phone" placeholder="Enter phone number" name="phonenumber" required>
+        </div>
+       
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Rooms:</label>   <!-- select room -->
+          <select class="form-control" id="exampleFormControlSelect1" name="rooms">
+            <option value="" disabled selected>Select Room</option>
+            <option>Room 1</option>
+            <option>Room 2</option>
+            <option>Room 3</option>
+            <option>Room 4</option>
+            <option>Room 5</option>
+            <option>Room 6</option>
+          </select>
+        </div>
+
+        
+        <br>
+        Booking Time:
+        <br>
+        <input type="time" name="starttime" placeholder="Start">
+
+        to
+
+        <input type="time" name="endtime">
+
+        <br>
+        <br>
+        Number of people:
+        <br>
+        <input type="number" class="type"placeholder="No. of people " min="0" value="0" name="people">    <!-- numbner of perople -->
+
+        <br>
+        <br>
+
+        Booking Date:
+        <br>
+        <input type="text" id="date" placeholder="dd/mm/yyyy" name="date"> <!-- select date -->
+
+        <br>
+        <br>
+        Board Games:(choose 1 only)
+        <br>
+
+
+
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+          <label class="custom-control-label" for="defaultGroupExample1">Jenga</label>
+        </div>
+
+        
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" >
+          <label class="custom-control-label" for="defaultGroupExample2">Agon</label>
+        </div>
+
+        
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+          <label class="custom-control-label" for="defaultGroupExample3">Chess</label>
+        </div>
+
+        <br>
+        <br>
+        <input type="submit" value="Book" class="btn btn-primary" name="">
+        
+      </form>
+
+
+
+        
+
+      
+      
+    </div>
+      <!-- select date -->
+    <script type="text/javascript">      
+            $(document).ready(function(){     
+                $("#date").datepicker()
+            });
+
+
+
+        </script>
+
+      
+
+
+
+</body>
+</html>
