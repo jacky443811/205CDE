@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+	display: block;
+	}
+
+	html, body, h1, h2, h3, ul, li, a, p
+	article, aside, footer, header, main, nav, section{
+		padding: 0;
+		margin: 0;
+
+	}
+
+	
+
+	.image{
+		background-color: #F5FEFF;
+		display: inline;
+		
+		
+
+
+		
+	}
+
+	.image > img{
+		width: 300px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+
+	.photos{
+		text-align: center;
+	}
+
+	footer{
+		clear: both;
+		background-color:#303534;
+		color: white;
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

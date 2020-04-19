@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+	display: block;
+	}
+
+	html, body, h1, h2, h3, ul, li, a, p
+	article, aside, footer, header, main, nav, section{
+		padding: 0;
+		margin: 0;
+
+	}
+
+	
+
+
+
+
+	footer{
+		clear: both;
+		background-color:#303534;
+		color: white;
+		
+	}
+
+
+	.image{
+		margin-top: 80px;
+		background-color: #F5FEFF;
+		padding-left: 250px;
+
+
+		
+	}
+
+	.image > img{
+		width: 500px;
+	}
+
+	#ins1{
+		position: absolute;
+		top: 15%;
+		left: 48%;
+
+	}
+
+	#ins2{
+		position: absolute;
+		top: 64%;
+		left: 48%;
+
+	}
+
+	#ins3{
+		position: absolute;
+		top: 106%;
+		left: 48%;
+
+		}
+	
+	#ins4{
+		position: absolute;
+		top: 148%;
+		left: 48%;
+	}
+
+	.card-deck{
+		margin-top: 100px;
+		
+
+	}
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

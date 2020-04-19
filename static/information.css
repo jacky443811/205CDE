@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+	display: block;
+	}
+
+	html, body, h1, h2, h3, ul, li, a, p
+	article, aside, footer, header, main, nav, section{
+		padding: 0;
+		margin: 0;
+
+	}
+
+	
+
+	#one{
+		font-size: 27px;
+		text-align: center;
+		margin-top: 50px;
+		color:#ABB4B6    ;
+
+
+	}
+
+
+	#two{
+		font-size: 27px;
+		text-align: center;
+		margin-top: 120px;
+		color:#ABB4B6;
+
+	}
+
+	body{
+		background-color: #F5FEFF;
+	}
+
+	footer{
+		clear: both;
+		background-color:#303534;
+		color: white;
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
