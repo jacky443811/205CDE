@@ -1,0 +1,93 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6deb5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Apr 23, 2020 at 04:05 PM
+-- Server version: 5.7.29-0ubuntu0.18.04.1
+-- PHP Version: 7.2.24-0ubuntu0.18.04.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `login`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `booking`
+--
+
+CREATE TABLE `booking` (
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `phonenumber` int(8) NOT NULL,
+  `rooms` varchar(255) NOT NULL,
+  `starttime` time NOT NULL,
+  `endtime` time NOT NULL,
+  `people` int(11) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `boardgames` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`email`, `password`, `phonenumber`, `rooms`, `starttime`, `endtime`, `people`, `date`, `boardgames`) VALUES
+('jacky20815@gmail.com', 'jacky123', 56220815, 'Room 4', '20:00:00', '21:00:00', 20, '04/30/2020', 'on');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Member`
+--
+
+CREATE TABLE `Member` (
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Member`
+--
+
+INSERT INTO `Member` (`firstname`, `lastname`, `email`, `password`) VALUES
+('jacky', 'chan', 'jacky20815@gmail.com', 'jacky123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Room`
+--
+
+CREATE TABLE `Room` (
+  `RoomID` int(11) NOT NULL,
+  `RoomName` varchar(255) NOT NULL,
+  `StartTime` time NOT NULL,
+  `EndTime` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `Room`
+--
+ALTER TABLE `Room`
+  ADD PRIMARY KEY (`RoomID`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
